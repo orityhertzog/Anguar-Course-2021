@@ -1,0 +1,10 @@
+<h1>Calculator</h1>
+<div>
+  A <input  type="number" #num1 (input)="setNum1(num1.value)">
+  B<input type="number" #num2 (input)="setNum2(num2.value)">
+</div>
+<button (click)="log()">GO!</button>
+
+  <div *ngFor="let res of results">
+    {{res}}
+  </div>
