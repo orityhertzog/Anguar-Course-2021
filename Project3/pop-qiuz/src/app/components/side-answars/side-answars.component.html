@@ -1,0 +1,5 @@
+<div class = "summary-wrapped" *ngFor="let item of summary" >
+   <div  class="side-answers" [ngStyle]="{'border-color': item.userAnswer === item.correctAnswer ? 'green' : 'red'}">{{item.caption}} 
+      <p> {{item.answers[item.userAnswer]}}</p></div> 
+</div>
+

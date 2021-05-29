@@ -1,10 +1,18 @@
 <h1>Calculator</h1>
 <div>
-  A <input  type="number" #num1 (input)="setNum1(num1.value)">
-  B<input type="number" #num2 (input)="setNum2(num2.value)">
+  <span>A </span><input  type="number" #Num1 (input)="setNum1(Num1.value)">
+  <span>B </span><input type="number" #Num2 (input)="setNum2(Num2.value)">
 </div>
-<button (click)="log()">GO!</button>
+<button (click)="calc()">GO!</button>
 
-  <div *ngFor="let res of results">
-    {{res}}
+  <div [hidden]="hasResults">
+    <p>
+      {{num1}} + {{num2}} = {{sum}}
+    </p>
+    <p>
+      {{num1}} * {{num2}} = {{product}}
+    </p>
+    <p>
+      {{num1}} - {{num2}} = {{subtract}}
+    </p>
   </div>

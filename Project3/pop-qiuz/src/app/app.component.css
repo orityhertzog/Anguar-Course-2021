@@ -1,0 +1,32 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-gap: 1px;
+   
+    
+   
+}
+.wrapper div{
+    justify-content: center;
+    align-content: center;
+    border: 1px rosybrown solid;
+    border-radius: 3px;
+}
+.title-area{
+    grid-column: 1 / -1;
+    background-color: bisque;
+}
+.answers-area{
+    background-color: burlywood;
+}
+.questions-area{
+    background-color: darksalmon;
+}
+.end-quiz{
+    background-color: gold;
+}
+
+
+
+

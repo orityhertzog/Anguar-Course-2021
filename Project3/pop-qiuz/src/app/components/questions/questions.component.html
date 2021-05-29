@@ -1,0 +1,12 @@
+<div class="root">
+    <div class="questions-wrapper">
+        <h1>{{this.currentQuestion.caption}}</h1>
+        <div class="answers-wrapper">
+            <ol>
+                <li [hidden]="" *ngFor="let answer of this.currentQuestion.answers" (click)="setAnswerSelected(answer)">
+                    {{answer}}
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
