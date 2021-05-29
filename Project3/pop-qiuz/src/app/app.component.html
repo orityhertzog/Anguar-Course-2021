@@ -8,14 +8,11 @@
         <div class="title-area">
           <app-title></app-title>
         </div>
-        
-          
-          <app-questions class ="questions-area" [hidden]="this.isQuizOver"  [currentQuestion]="currentQuestion" (answerSelected)="answer($event)"></app-questions>
-        
-        
-          <app-end-quiz  class ="end-quiz" [hidden]="!isQuizOver" [userGrade] = "grade" ></app-end-quiz>
-        
-        <div class ="answers-area">
+        <div class = "question-area">
+            <app-questions *ngIf="!this.isQuizOver"  [currentQuestion]="currentQuestion" (answerSelected)="answer($event)"></app-questions>
+            <app-end-quiz   *ngIf="isQuizOver" [userGrade] = "grade" ></app-end-quiz>
+        </div>
+        <div class ="answer-area">
           <app-side-answars [summary] = "answeredQuestion"></app-side-answars>
         </div>
       

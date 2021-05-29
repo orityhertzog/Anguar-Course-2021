@@ -1,9 +1,6 @@
-:host {
-    display: grid;
-}
+
 h1{
+    margin: 30px;
     display: flex;
     justify-content: center;
-    align-content: center;
-    padding: 3px;
 }

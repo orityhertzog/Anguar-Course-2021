@@ -2,29 +2,26 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 6fr;
-    grid-gap: 1px;
-   
-    
-   
+    grid-gap: 5px;
+ 
 }
+
 .wrapper div{
-    justify-content: center;
-    align-content: center;
-    border: 1px rosybrown solid;
-    border-radius: 3px;
+    border: 2px rgba(188, 143, 143, 0.425) solid;
+    border-radius: 5px;
 }
 .title-area{
     grid-column: 1 / -1;
-    background-color: bisque;
+   background-color: rgba(222, 184, 135, 0.281);
 }
-.answers-area{
-    background-color: burlywood;
+.question-area{
+    background-color:  rgba(233, 150, 122, 0.205);
 }
-.questions-area{
-    background-color: darksalmon;
+.answer-area{
+   background-color: rgba(233, 150, 122, 0.205);
 }
 .end-quiz{
-    background-color: gold;
+   background-color: rgba(255, 217, 0, 0.349);
 }
 
 
