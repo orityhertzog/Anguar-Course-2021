@@ -3,8 +3,8 @@ import { Question } from "./Question.model";
 export let questions :Question[] =
 [
     {
-        caption: '2 + 2',
-        answers: ['4','5', '3', '1'],
+        caption: '4 + 2 * 3',
+        answers: ['10','18', '3', '1'],
         correctAnswer: 0,
         userAnswer: -1
     },

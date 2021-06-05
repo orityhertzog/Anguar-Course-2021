@@ -1,0 +1,6 @@
+
+    <app-rgb-editor></app-rgb-editor>
+    <app-color-box class="guess" [color]="colorGuess$ | async" [title]="myTitle"></app-color-box>
+    <app-color-box class="rnd-color" [color]="colorComp$ | async" [title]="compTitle"></app-color-box>
+    <button (click)="randomize()">Random Color</button>
+    <h2 *ngIf="success$ | async">SUCCESS!!!</h2>
